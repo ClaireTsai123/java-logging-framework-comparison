@@ -167,3 +167,18 @@ Using SLF4J allows the application to remain independent of the underlying loggi
 The project demonstrates how developers can evaluate logging frameworks based on configuration complexity, features, and application requirements.
 
 For more details, see [Framework Comparison](docs/comparison.md).
+
+## 10. CI/CD Pipeline
+
+This project uses Jenkins for continuous integration.
+
+The Jenkins pipeline includes:
+
+1. Verify Java and Maven environment.
+2. Run unit tests with Logback.
+3. Run unit tests with Log4j2.
+4. Package the application using Maven.
+5. Archive the generated JAR artifact.
+
+The pipeline is configured through the Jenkinsfile
+and has been successfully executed.
